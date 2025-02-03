@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'jorgeFont';
+    src: url('fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'juanFont';
+    src: url('fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'jorgeFont', sans-serif;
+    padding: 5em 15em 5em 15em;
+
+    background-color: #F1E6DA;
+    color: #6d6664;
+}
+
+#recipePlaceholder {
+    border-radius: 30px;
+    padding: 40px 70px 40px 70px;
+    background-color: white;
+}
+
+#imgHolder img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+#recipePlaceholder h1 {
+    color: black;
+    font-family: 'juanFont';
+}
+
+#recipePlaceholder h2 {
+    color: #8B4513;
+    font-family: 'juanFont';
+}
+
+#prepTime {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #FEF7FC;
+    padding: 20px 40px 20px 40px;
+}
+#prepTime ul li::marker {
+    color: #a4446e;
+}
+
+ul li::marker, ol li::marker {
+    color: #8B4513;
+    font-weight: bold;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    padding-left: 20px;
+
+}
+
+#prepTime h3 {
+    color: #a4446e;
+}
+#ingredients, #instructions {
+    border-bottom: 1px solid #9898985d;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.mama{
+    border-bottom: 1px solid #9898985d; 
+}
+
+#nutrition > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#nutrition > div > div {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 20px 40px;
+
+}
+
+.nutrition-value {
+    margin-left: auto;
+    width: 50%;
+    text-align: left;
+    color: #8B4513;
+    font-weight: bold;
+}
+ 
+body, #recipePlaceholder, #imgHolder img {
+    transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }    
+
+    #recipePlaceholder {
+        border-radius: 0;
+        padding: 0px;
+    }
+
+    #imgHolder img {
+        border-radius: 0;
+    }
+
+    #title, #prepTime, #ingredients, #instructions, #nutrition {
+        margin: 50px 50px 0px 50px;
+        padding-bottom: 40px;
+        animation:  0.5s ease-in-out;
+    }
+}
